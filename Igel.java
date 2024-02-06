@@ -16,7 +16,7 @@ public class Igel extends Spielfigur
     public Igel()
     {    
         // TODO
-        super(0, 0, 0); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
+        super(0, 0, 0, 1); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
         // Damit werden die Werte der Attribute Stärke, Geschwindigkeit und Geschicklichkeit gesetzt.
         
         // Nun die Initalisierung der Attribute der Unterklasse

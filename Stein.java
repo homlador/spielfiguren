@@ -10,7 +10,7 @@ public class Stein extends Spielfigur
     private String art;
     
     public Stein() {
-        super(10, 0, 0);  // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse. 
+        super(10, 0, 0, 1);  // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse. 
         art = "Granit";
     }
     

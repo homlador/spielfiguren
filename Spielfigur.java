@@ -20,14 +20,16 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
     private int staerke;
     private int geschicklichkeit;
     private int geschwindigkeit;
+    private int groesse;
 
     /**
      * Konstruktor f�r Objekte der Klasse SPIELFIGUR
      * @param staerkeNeu
      * @param geschicklichkeitNeu
      * @param geschwindigkeitNeu
+     * @param groesseNeu
      */
-    public Spielfigur(int staerkeNeu, int geschicklichkeitNeu, int geschwindigkeitNeu)
+    public Spielfigur(int staerkeNeu, int geschicklichkeitNeu, int geschwindigkeitNeu, int groesseNeu)
     {
         if (staerkeNeu<=20)
         {
@@ -54,6 +56,15 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
             geschwindigkeit=0;
         }
 
+        if (groesseNeu<=20)
+        {
+            groesse = groesseNeu;
+        }
+        else
+        {
+            groesse=0;
+        }
+        
         if(staerke + geschicklichkeit + geschwindigkeit >40)
         {
             staerke=0;
@@ -79,6 +90,7 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
         System.out.println("Geschwindigkeit: " + GeschwindigkeitGeben());
         System.out.println("Geschicklichkeit: " + GeschicklichkeitGeben());
         System.out.println("Staerke         : " + StaerkeGeben());
+        System.out.println("Groesse         : " + GroesseGeben());
     }
 
     /**
@@ -109,5 +121,15 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
     public int StaerkeGeben()
     {
         return staerke;
+    }
+    
+    /**
+     * Gibt die Groesse zur�ck.
+     * 
+     * @return        groesse
+     */
+    public int GroesseGeben()
+    {
+        return groesse;
     }
 }

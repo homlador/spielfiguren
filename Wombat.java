@@ -8,7 +8,6 @@
 public class Wombat extends Spielfigur
 {
     private String fell;
-    //fellSauberkeit geändert als String, damit diese Eigenschaft ausgegeben werden kann
     private String fellSauberkeit;
 
     /**
@@ -16,7 +15,7 @@ public class Wombat extends Spielfigur
      */
     public Wombat()
     {
-        super(5, 10, 10); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
+        super(5, 10, 10, 1); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
         // Damit werden die Werte der Attribute Stärke, Geschwindigkeit und Geschicklichkeit gesetzt.
         
         // Nun die Initalisierung der Attribute der Unterklasse
@@ -40,7 +39,6 @@ public class Wombat extends Spielfigur
      * Gibt die Spielereigenschaften auf dem Ausgabefenster aus.
      * �berschreibt die Methode der Oberklasse
      */
-    //mitverändert: Syso zu Fellsauberkeit
     public void SpielerEigenschaftenAusgeben()
     {
         System.out.println("Fell: "+ fell);

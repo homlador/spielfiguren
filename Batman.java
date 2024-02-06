@@ -7,7 +7,7 @@ public class Batman extends Spielfigur
     private String gegner;
     
     public Batman() {
-        super(11, 11, 11);  // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse. 
+        super(11, 11, 11, 11);  // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse. 
         gegner = "Joker";
     }
     
