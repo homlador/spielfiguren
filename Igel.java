@@ -19,9 +19,8 @@ public class Igel extends Spielfigur
         super(0, 0, 0, 1); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
         // Damit werden die Werte der Attribute Stärke, Geschwindigkeit und Geschicklichkeit gesetzt.
         
-        // Nun die Initalisierung der Attribute der Unterklasse
-        // TODO
- 
+        
+         fell = "grau / weiß";
     }
 
     /**
@@ -42,8 +41,7 @@ public class Igel extends Spielfigur
      */
     public void spielerEigenschaftenAusgeben()
     {
-        // TODO: Besondere Eigenschaften ausgeben
-        
+        System.out.println("Fell: " + fell);
         // Aufruf der gleichnamigen Methode der Oberklasse
         super.spielerEigenschaftenAusgeben();
     }
