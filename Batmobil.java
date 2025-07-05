@@ -4,7 +4,7 @@ public class Batmobil extends Spielfigur{
     private String model;
     private double beschleunigung;
 
-    public Batmobil(int staerkeNeu, int geschicklichkeitNeu, int geschwindigkeitNeu, int groesseNeu) {
+    public Batmobil() {
         super(15, 4, 257, 5);
         eigentuemer = "Batman";
         model = "The Black Tubler";
