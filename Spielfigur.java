@@ -21,6 +21,7 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
     private int geschicklichkeit;
     private int geschwindigkeit;
     private int groesse;
+    private int lebenspunkte; 
 
     /**
      * Konstruktor f�r Objekte der Klasse SPIELFIGUR
@@ -28,8 +29,9 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
      * @param geschicklichkeitNeu
      * @param geschwindigkeitNeu
      * @param groesseNeu
+     * @param lebenspunkteNeu
      */
-    public Spielfigur(int staerkeNeu, int geschicklichkeitNeu, int geschwindigkeitNeu, int groesseNeu)
+    public Spielfigur(int staerkeNeu, int geschicklichkeitNeu, int geschwindigkeitNeu, int groesseNeu, int lebenspunkteNeu)
     {
         if (staerkeNeu<=20)
         {
@@ -71,6 +73,13 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
             geschicklichkeit=0;
             geschwindigkeit=0;
         }
+        
+        if (lebenspunkteNeu <= 20 && lebenspunkteNeu >=0){
+            lebenspunkte = lebenspunkteNeu; 
+        }
+        else {
+            lebenspunkte = 1; 
+        }
 
     }
 
@@ -91,6 +100,7 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
         System.out.println("Geschicklichkeit: " + GeschicklichkeitGeben());
         System.out.println("Staerke         : " + StaerkeGeben());
         System.out.println("Groesse         : " + GroesseGeben());
+        System.out.println("Lebenspunkte    : " + lebenspunkteGeben());
     }
 
     /**
@@ -131,5 +141,15 @@ public abstract class Spielfigur                //abstrakt == es kann keine Spie
     public int GroesseGeben()
     {
         return groesse;
+    }
+    
+     /**
+     * Gibt die Lebenspunkte zur�ck.
+     * 
+     * @return        lebenspunkte
+     */
+    public int lebenspunkteGeben()
+    {
+        return lebenspunkte;
     }
 }

@@ -15,7 +15,7 @@ public class Wombat extends Spielfigur
      */
     public Wombat()
     {
-        super(5, 10, 10, 1); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
+        super(5, 10, 10, 1, 7); // Diese Zeile ist wichtig! Aufruf des Konstruktors der Oberklasse.
         // Damit werden die Werte der Attribute Stärke, Geschwindigkeit und Geschicklichkeit gesetzt.
         
         // Nun die Initalisierung der Attribute der Unterklasse
